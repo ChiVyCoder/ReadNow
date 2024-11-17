@@ -1,0 +1,203 @@
+:root {
+        --primary-color: #1E6F9F ;
+        --white-color: #fff;
+        --black-color: #000;
+        --text-color: #3e3d3d;
+        --border-color: #DBDBDB;
+        --header-height: 120px;
+        --navbar-height: 34px;
+        --header-search-height: calc( (--header-height) - (--navbar-height) );
+        --short-bar-height: 46px;
+        --green-color: #4CAF50;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+    }
+    
+html {
+        font-size: 62.5%;
+        line-height: 1.6rem;
+        height: 100%;
+        font-family: 'Roboto', 'sans-serif'; 
+        scroll-behavior: smooth;
+}
+
+#text {
+    height: 0;
+    display: none;
+}
+ul {
+    list-style: none;
+}
+li,a {
+    text-decoration: none;
+}
+.app {
+  background-color: #ede9e9;
+}
+/* =================FORM CSS=========== */
+.form {
+    position: fixed;
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    border-left: 10px solid transparent;
+    align-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px 0 rgba(40, 49, 58, 0.1);
+    z-index: 10;
+  }
+  .form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    width: 10px;  /* Độ rộng của border-left */
+    background-image: linear-gradient(to bottom,#5DE0E6, #004AAD, #004AAD);  /* Gradient */
+  }
+.form-model {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.3s ease;
+}
+.form-model.open {
+    display: block;
+}
+.modal {
+    position: fixed;
+    background-color:  rgba(0, 0, 0,0.1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 2;
+  } 
+  .modal.open {
+    display: block;
+  }
+  .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+  }
+  .form .heading {
+    font-size: 2rem;
+  }
+  .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  
+  .form-label,
+  .form-message {
+    text-align: left;
+  }
+  
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .form-control {
+    height: 30px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+  
+  .form-submit {
+    outline: none;
+    background: linear-gradient(90deg, #56ddfb, #3707c9);
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-position 0.6s ease;
+    background-size: 200% 200%; /* Tạo độ rộng của gradient */
+    background-position: right center; /* Khởi tạo gradient ở phía bên phải */
+  }
+  .form-submit-2 {
+    outline: none;
+    background: linear-gradient(90deg, #56edfb, #318f06);
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-position 0.6s ease;
+    background-size: 200% 200%; /* Tạo độ rộng của gradient */
+    background-position: right center; /* Khởi tạo gradient ở phía bên phải */
+  }
+  
+  .form-submit:hover, .form-submit-2:hover {
+    background-position: left center; /* Di chuyển gradient sang trái khi hover */
+  }
+  
+  .spacer {
+    margin-top: 36px;
+  }
+  

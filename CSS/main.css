@@ -1,0 +1,761 @@
+/* ==================HEADER================================ */
+.header_body {
+}
+.header {
+    height: var(--header-height);
+    background-color: var(--primary-color);
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+.navbar-list {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+.header_navbar-items > a{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.navbar-list-left {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+}
+.navbar-list-left >li> a:hover {
+    color: rgb(251, 182, 148);
+    cursor: pointer;
+}
+.navbar-list-left li{
+   min-width: 70px;
+}
+.navbar-list-left a i {
+    font-size: 1.2rem;
+}
+.navbar-list-right {
+    width: 142px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-list-right li a:hover {
+    color: rgb(251, 182, 148);
+    cursor: pointer;
+}
+.navbar-list-right-border {
+    position: relative;
+}
+.navbar-list-right-border::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -5px;
+    height: 60%;
+    border-right: 1px solid #e5e5e5;
+    transform: translateY(-50%);
+}
+.language {
+    position: relative;
+}
+.language:hover .language-subnav {
+    display: block;
+}
+.language::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 10px;
+    position: absolute;
+    bottom: -5px;
+    background-color: transparent;
+}
+.subnav {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+}
+.language-subnav {
+    display: none;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px var(--border-color);
+    padding: 4px 12px;
+}
+.language-subnav a{
+    color: var(--text-color);
+}
+.language-subnav:hover {
+    background-color: rgb(42, 151, 253);
+    cursor: pointer;
+}
+.language-subnav:hover a {
+    color: #fff;
+}
+/* 2.========= */
+.header img{
+    width: 6%;
+    height: 6%;
+}
+
+.navbar-search {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-search li {
+    margin-right: 10px;
+}
+.header-search {
+    border: none;
+    outline: none;
+    width: 700px;
+    height: 36px;
+    font-size: 1.4rem;
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px ;
+    position: relative;
+    padding-left: 10px;
+}
+.search-btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: 1px solid var(--primary-color);
+    position: absolute;
+    
+}
+.search-btn:hover {
+    background-color: rgb(42, 151, 253);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.header__cart-btn {
+    position: relative;
+}
+.empty_cart {
+    display: none;
+    position: absolute;
+    background-image:url('../asset/img/EmptyCart.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 360px;
+    height: 180px;
+    top: 35px;
+    right: 0px;
+    box-shadow: 2px 2px 2px #9f9e9e;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    transition: all 0.4s ease;
+}
+.header__cart-btn i {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+.header__cart-btn i:hover {
+  cursor: pointer;
+}
+.header__cart-btn:hover .empty_cart{
+    display: block;
+}
+/* 3.=========== */
+.navigator {
+    display: flex;
+    margin-left: 120px;
+}
+.navigator .navigation-content {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.navigation-content, .navigation-content {
+    margin-right: 40px;
+}
+.navigation-content i {
+    margin-left: 4px;
+}
+/* HIỆU ỨNG ACTIVE CHO NAVIGATION======= */
+.navigation-content.active {
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+}
+/* =====================================BODY===================================== */
+.container {
+    /* position: relative;
+    z-index: 2;
+    bottom: 350px; 
+   height: calc(100%+400px); */
+}
+
+.banner {
+   margin-top: 20px;
+   position: relative;
+}
+
+.banner-2 a{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+.banner-2 a img {
+    border-radius: 4px;
+
+}
+/* ================DANH MỤC=========== */
+.category-title {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    margin-top: 20px;
+}
+.category-title > i {
+    margin-right: 5px;
+    font-size: 1.8rem;
+}
+.category {
+    background-color: var(--white-color);
+    padding: 0 0 15px;
+} 
+.category-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffddbb;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 12px;
+    transition: transform 0.4s;
+}
+.category-items:hover {
+    transform:translateY(-4px);
+}
+.category-items:hover a {
+color: var(--white-color);
+}
+.category-items a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+.category-items a:hover {
+    color: #ffffff;
+}
+/* =========== FLASH SALE========================== */
+.flash-sale {
+    margin-top: 20px;
+    padding: 16px 0;
+    background-color: var(--white-color);
+}
+.flash-sale-items {
+display: flex;
+}
+.flash-sale-item {
+    position: relative;
+    height: 275px;
+    background-color: #fff7f6;
+    border: 1px solid var(--border-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+} 
+.flash-sale-item::before {
+    content: "-20%";
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    background-color: #e64925;
+    color: #ffe14b;
+    font-size: 1.4rem;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 7px;
+    z-index: 3;
+}
+.flash-sale-logo {
+    width: 90%;
+    height: auto;
+}
+.fsale-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.countdown { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff542e; 
+}
+.fsale-item-top {
+ border-bottom: 1px solid var(--border-color);
+ border-radius: 3px;
+}
+.fsale-item-top-img {
+    width: 100%;
+    height: 100%; 
+    transition: all linear 0.3s;
+}
+.fsale-item-top-img:hover {
+    transform: scale(1.05);
+}
+
+.fsale-item-title {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.fsale-price {
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+}
+.fsale-item-price {
+color: #ff542e;
+font-size: 1.6rem;
+margin-right: 8px;
+}
+.fsale-item-old-price {
+    color:var(--text-color);
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    }
+.fsale-item-sold {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.fsale-item-btn {
+
+}
+.fsale-item-bottom {
+    height: 125px;
+    position: relative;
+    padding: 4px;
+    border-radius: 3px;
+}
+.fsale-item-bottom:hover .fsale-item-bottom-hover{
+    display: flex;
+}
+
+.fsale-item-bottom-hover {
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 30px;
+    background-color: rgba(255, 245, 225, 0.8);
+    transition: all linear 0.4s;
+    animation: layer 0.4s ease;
+}
+.fsale-item-bottom-hover button {
+    padding: 6px 4px;
+    color: var(--primary-color);
+    border: none;
+    background-color:var(--white-color);
+    font-size: 1.4rem;
+    border-radius: 3px;
+    font-weight: 400;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.fsale-item-bottom-hover button:hover {
+    background-color: rgb(42, 151, 253);
+    color: var(--white-color);
+}
+.fsale-item-bottom-btn1 {
+    margin-bottom: -2px;
+}
+/* ========= FEATURE BOOK ============================== */
+.featured-books-title  {
+    display: flex;
+    font-size: 24px;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+}
+.layer-father {
+    position: relative;
+    border-radius: 4px;
+}
+.layer-father:hover .feature-books-slideShow-layer{
+    display: flex;
+}
+.feature-books-slideShow-layer {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    left: 12px;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%);
+    width: 280.8px;
+    height: 200px;
+    transition: all 0.4s ease;
+    animation: layer 0.4s ease;
+}
+@keyframes layer {
+    from {
+        opacity: 0;
+    }
+    to {
+     opacity: 1;
+    }
+}
+.feature-books-slideShow-btns  {
+    width: 160px;
+}
+.feature-books-slideShow-btn {
+    padding: 8px 8px;
+    width: 160px;
+    margin-top: 6px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #bc7dfc, #ffb458);
+    background-size: 200% 200%; /* Tạo độ rộng của gradient */
+    background-position: right center; /* Khởi tạo gradient ở phía bên phải */
+    transition: background-position 0.6s ease;
+}
+.feature-books-slideShow-btn:hover {
+    background-position: left center; 
+}
+.featured-books {
+    background-color: var(--white-color);
+}
+.feature-books-slideShow-item {
+    height: 424px;
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.feature-books-slideShow-img {
+    height: 420px;
+    align-items: center;
+}
+.featured-books-items {
+    display: flex;
+    align-items: center;
+}
+.featured-books-item {
+    height: 300px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+.featured-books-item-top {
+    height: 180px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    background-image: url(../asset/img/book7.jpg);
+    background-size: contain; /* Giữ nguyên tỷ lệ ảnh, nhưng ảnh sẽ không bị cắt */
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+.featured-books-item-top img:hover {
+    transform: scale(1.05);
+}
+.featured-books-item-top img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+.featured-books-item-bottom {
+    height: 120px;
+    background-color:#ebf6ff;
+    padding: 4px;
+    border-radius: 3px;
+}
+.featured-books-item-name {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.featured-books-item-price {
+display: flex;
+margin-top: 6px;
+align-items: center;
+}
+.featured-books-item-price-old {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+.featured-books-item-price-new {
+    margin-right: 8px;
+    font-size: 1.6rem;
+    font-weight: 450;
+    color: #ff542e;
+
+}
+.featured-books-item-sold {
+    margin-top: 8px;
+    font-size: 1.4rem;
+
+}
+.featured-books-item-rate {
+margin-top: 8px;
+display: flex;
+}
+.featured-books-item-rate li i{
+    font-size: 1.4rem;
+    color: #ffbd1b;
+    margin-right: 3px;
+}
+.featured-books-item-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    transition: all 0.3s linear;
+}
+
+.featured-books-item-btn button{
+    padding: 4px 6px;
+    background: linear-gradient(90deg, #56edfb, #5b48a0);
+    color: var(--white-color);
+    border-radius: 5px;
+    border-color: transparent transparent;
+    cursor: pointer;
+    transition: background-position 0.6s ease;
+    margin-top: 4px;
+    width: 170px;
+    font-size: 1.4rem;
+    background-size: 200% 200%; /* Tạo độ rộng của gradient */
+    background-position: right center; /* Khởi tạo gradient ở phía bên phải */
+}
+
+.featured-books-item-btn button:hover {
+    background-position: left center;
+    color: var(--white-color);
+}
+/* ========== ADVERTIESMENT======== */
+.advertisement {
+    margin-top: 24px;
+    background-color: #ffffff;
+}
+.advertisement-item {
+    width: 100%;
+    padding: 12px 0;
+}
+
+/* ============ SALE ITEM =========== */
+.sale-title {
+    margin-top: 16px;
+    display: flex;
+    font-size: 2.4rem;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+}
+.sale {
+    margin-top: 16px;
+    background-color: #ffffff;
+}
+.sale-item {
+height: 340px;
+border-radius: 4px;
+border: 2px solid var(--border-color);
+margin: 10px ;
+transition: all 0.3s linear;
+}
+.sale-item:hover {
+    box-shadow: 2px 2px 5px #ddd;
+    transform: scale(1.02);
+}
+.sale-item-top {
+height: 220px;
+background-image: url(../asset/img/book13.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+.sale-item-bottom {
+height: 120px;
+background-color: #f3f0ff;
+}
+.sale-item-bottom-name {
+    font-size: 1.9rem;
+    color: var(--text-color);
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.sale-item-bottom-price {
+    margin-top: 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 6px;
+}
+.sale-item-bottom-price-new {
+    font-size: 1.8rem;
+    color: #ff542e;
+    margin-right: 8px;
+    font-weight: 450;
+}
+.sale-item-bottom-price-old {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+.sale-item-bottom-rate {
+    padding: 0 6px;
+    display: flex;
+}
+
+.sale-item-bottom-rate li i{
+    color: #ffbd1b;
+    font-size: 1.6rem;
+}
+.sale-item-bottom-btn {
+    display: block; 
+    margin: 8px auto; 
+    padding: 2px 70px;
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sale-item-bottom-btn:hover {
+    background-color: #3081b4;
+}
+.sold-and-rate {
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    justify-content: space-between;
+}
+.sale-item-bottom-sold {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 1.4rem;
+}
+/* ========================= FOOTER=================== */
+
+ .show-footer { 
+    bottom: 0; /* Hiển thị footer */
+ }
+.footer-header {
+    display: flex;
+    background-color: var(--primary-color);
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer img {
+    width: 4%;
+}
+.footer-header h4 {
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+.footer-input input {
+    height: 36px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #f1f1f1;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+.footer-input {
+    display: flex;
+    align-items: center;
+}
+.footer-input h4 {
+    margin-right: 12px;
+}
+.footer-input button {
+    height: 36px;
+    padding: 6px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.3rem;
+}
+.footer-input button:hover {
+    background-color: rgb(42, 151, 253);
+    color: var(--white-color);
+}
+.footer-body {
+    background-color: var(--white-color);
+    padding: 12px;
+}
+.footer-body-title {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+.footer-body-list {
+    list-style: none;
+}
+.footer-body-list-items {
+    padding: 4px;
+}
+.footer-body-list-items a{
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+.footer-body-list-items a:hover {
+    color: var(--primary-color);
+}
+.footer-body-icon  {
+    font-size: 1.4rem;
+    margin-right: 6px;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+.footer-copyright a{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
