@@ -6,7 +6,9 @@ if (window.jQuery) {
         margin:10,
         dots: false,
         autoplay:true,
-        items: 1,              
+        items: 1,   
+        smartSpeed: 600, // Tốc độ chuyển động giữa các mục 
+        fluidSpeed: true,           
         autoplayTimeout: 3000, // Thời gian chuyển ảnh (3 giây)
         autoplayHoverPause: true , // Tạm dừng khi hover chuột
         responsive:{

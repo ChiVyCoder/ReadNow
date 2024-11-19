@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="./asset/fonts/themify-icons-font/themify-icons/themify-icons.css">
+      <link rel="icon" href="./asset/img/ReadNow.png">
       <title>ReadNow</title>
   </head>
   <body>
@@ -53,9 +54,9 @@
                     <li class="header__cart-btn"><i class="ti-shopping-cart-full"></i> <span class="empty_cart"></span></li>
                 </ul>
                 <ul class="navigator">
-                    <li><a href="#abc" class="navigation-content">Trang chủ <i class="ti-home"></i></a></li>
-                    <li><a href="#" class="navigation-content">Ưu đãi <i class="ti-gift"></i></a></li>
-                    <li><a href="#" class="navigation-content">Liên hệ <i class="ti-comment"></i></a></li>
+                    <li><a href="#banner" class="navigation-content">Trang chủ <i class="ti-home"></i></a></li>
+                    <li><a href="#flash-sale" class="navigation-content">Ưu đãi <i class="ti-gift"></i></a></li>
+                    <li><a href="#footer" class="navigation-content">Liên hệ <i class="ti-comment"></i></a></li>
                 </ul>
             </div>
           </div>
@@ -129,7 +130,7 @@
                         <div class="grid wide">
                           <!-- ======== BANNER ======== -->
                           <div class="row">
-                            <div class="col banner l-7">
+                            <div class="col banner l-7" id="banner">
                               <div class="owl-carousel owl-theme">
                                 <div class="item">
                                   <img class="banner-img" src="./asset/img/banner1.png" alt="Banner 1">
@@ -157,58 +158,38 @@
                           <!-- ====== DANH MỤC========= -->
                           <h2 class="category-title"><i class="ti-list"></i>DANH MỤC </h2>
                           <div class="category">
-                            <div class="row" >
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="">Sách giáo khoa </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Sách khoa học </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Truyện tranh </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Tiểu thuyết </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Truyện ngắn </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Sách thiếu nhi </a>
-                                </div>
-                              </div>
+                              <ul class="category-list">
+                                <li class="category-items">
+                                    <a href="">Sách giáo khoa </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Sách khoa học </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Truyện tranh </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Tiểu thuyết </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Truyện ngắn </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Sách thiếu nhi </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="">Sách trinh sát, tội phạm </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Sách tình yêu, lãng mạn </a>
+                                </li>
+                                <li class="category-items">
+                                    <a href="" >Sách tôn giáo, tâm linh </a>
+                                </li>
+                              </ul>
                             </div>
-                            <div class="row " >
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="">Sách trinh sát, tội phạm </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Sách tình yêu, lãng mạn </a>
-                                </div>
-                              </div>
-                              <div class="col l-2">
-                                <div class="category-items">
-                                  <a href="" >Sách tôn giáo, tâm linh </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                           <!-- ===== FLASH SALE ======= -->
-                          <div class="flash-sale" id="abc">
+                          <div class="flash-sale" id="flash-sale">
                           <div class="row">
                               <div class="col l-3">
                                 <div class="fsale-logo">
@@ -653,126 +634,129 @@
                       </div>
                     </div>
         <!-- ===========================FOOTER============================ -->
-        <div class="grid wide"> 
-          <div class="footer">
-            <div class="footer-content">
-              <div class="row">   
-                <div class="col l-12">
-                  <div class="footer-header">
-                  <img src="./asset/img/ReadNow.png" alt="logo">
-                    <div class="footer-input">
-                      <h4>Để lại email nhận ngay ưu đãi khủng</h4>
-                      <input type="text" placeholder="abc@gmail.com">
-                      <button>Đăng ký</button>
-                    </div>
-                  </div>
-                </div>     
-              </div>
-              <div class="footer-body">
-                <div class="row">
-                    <div class="col l-3">
-                      <div class="footer-body-items">
-                        <h3 class="footer-body-title">VỀ CHÚNG TÔI</h3>
-                        <ul class="footer-body-list">
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-location-pin" href="" ></i>
-                            <a href="#">Ninh Kiều, Cần Thơ</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-email" href="" ></i>
-                            <a href="#">tcv992005@gmail.com</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-mobile" href=""></i>
-                            <a href="#">0916 377 758</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-calendar" href=""></i>
-                            <a href="#">7:00 - 17:00 các ngày trong tuần</a>
-                          </li>
-                        </ul>
+         <div class="footer-container">
+           <div class="grid wide"> 
+             <div class="footer" id="footer">
+               <div class="footer-content">
+                 <div class="row">   
+                   <div class="col l-12">
+                     <div class="footer-header">
+                     <img src="./asset/img/ReadNow.png" alt="logo">
+                       <div class="footer-input">
+                         <h4>Để lại email-nhận ngay ưu đãi khủng</h4>
+                         <input type="text" placeholder="abc@gmail.com">
+                         <button>Đăng ký</button>
+                       </div>
+                     </div>
+                   </div>     
+                 </div>
+                 <div class="footer-body">
+                   <div class="row">
+                       <div class="col l-3">
+                         <div class="footer-body-items">
+                           <h3 class="footer-body-title">VỀ CHÚNG TÔI</h3>
+                           <ul class="footer-body-list">
+                             <li class="footer-body-list-items">
+                               <i class="footer-body-icon ti-location-pin" href="" ></i>
+                               <a href="#">Ninh Kiều, Cần Thơ</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <i class="footer-body-icon ti-email" href="" ></i>
+                               <a href="#">tcv992005@gmail.com</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <i class="footer-body-icon ti-mobile" href=""></i>
+                               <a href="#">0916 377 758</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <i class="footer-body-icon ti-calendar" href=""></i>
+                               <a href="#">7:00 - 17:00 các ngày trong tuần</a>
+                             </li>
+                           </ul>
+                         </div>
+                       </div>
+                       <div class="col l-3">
+                         <div class="footer-body-items">
+                           <h3 class="footer-body-title">DANH MỤC</h3>
+                           <ul class="footer-body-list">
+                             <li class="footer-body-list-items">
+                               <a href="#">Sách giáo khoa</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Sách thiếu nhi</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Sách tình yêu, lãng mạng</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Sách khoa học</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Tiểu thuyết</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Truyện ngắn</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Sách trinh thám, tội phạm</a>
+                             </li>
+                           </ul>
+                         </div>
+                       </div>
+                       <div class="col l-3">
+                        <div class="footer-body-items">
+                          <h3 class="footer-body-title">KẾT NỐI</h3>
+                          <ul class="footer-body-list">
+                            <li class="footer-body-list-items">
+                              <i class="footer-body-icon ti-facebook" href="" ></i>
+                              <a href="#">Facebook</a>
+                            </li>
+                            <li class="footer-body-list-items">
+                              <i class="footer-body-icon ti-instagram" href="" ></i>
+                              <a href="#">Instagram</a>
+                            </li>
+                            <li class="footer-body-list-items">
+                              <i class="footer-body-icon ti-youtube" href=""></i>
+                              <a href="#">Youtube</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col l-3">
-                      <div class="footer-body-items">
-                        <h3 class="footer-body-title">DANH MỤC</h3>
-                        <ul class="footer-body-list">
-                          <li class="footer-body-list-items">
-                            <a href="#">Sách giáo khoa</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Sách thiếu nhi</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Sách tình yêu, lãng mạng</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Sách khoa học</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Tiểu thuyết</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Truyện ngắn</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Sách trinh thám, tội phạm</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col l-3">
-                      <div class="footer-body-items">
-                        <h3 class="footer-body-title">CHĂM SÓC KHÁCH HÀNG</h3>
-                        <ul class="footer-body-list">
-                          <li class="footer-body-list-items">
-                            <a href="#">Các câu hỏi thường gặp</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Gửi yêu cầu hổ trợ</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Đặt hàng online</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Phương thức vận chuyển</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Hoàn trả đơn hàng</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <a href="#">Chính sách</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col l-3">
-                      <div class="footer-body-items">
-                        <h3 class="footer-body-title">KẾT NỐI</h3>
-                        <ul class="footer-body-list">
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-facebook" href="" ></i>
-                            <a href="#">Facebook</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-instagram" href="" ></i>
-                            <a href="#">Instagram</a>
-                          </li>
-                          <li class="footer-body-list-items">
-                            <i class="footer-body-icon ti-youtube" href=""></i>
-                            <a href="#">Youtube</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="footer-copyright">
-                    <a href="">© Bản quyền thuộc về <b> Chí Vỹ</b></a>
-                  </div>
-              </div>
-            </div>
-            </div>
-        </div>
+                       <div class="col l-3">
+                         <div class="footer-body-items">
+                           <h3 class="footer-body-title">CHĂM SÓC KHÁCH HÀNG</h3>
+                           <ul class="footer-body-list">
+                             <li class="footer-body-list-items">
+                               <a href="#">Các câu hỏi thường gặp</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Gửi yêu cầu hổ trợ</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Đặt hàng online</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Phương thức vận chuyển</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Hoàn trả đơn hàng</a>
+                             </li>
+                             <li class="footer-body-list-items">
+                               <a href="#">Chính sách</a>
+                             </li>
+                           </ul>
+                         </div>
+                       </div>
+                    
+                     </div>
+                     <div class="footer-copyright">
+                       <a href="">© Bản quyền thuộc về <b> Chí Vỹ</b></a>
+                     </div>
+                 </div>
+               </div>
+               </div>
+           </div>
+         </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="./main.js"></script>
       <script src="./form.js"></script>
